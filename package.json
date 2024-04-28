@@ -1,0 +1,29 @@
+{
+  "name": "pkg-name",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "",
+  "scripts": {
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build",
+    "typecheck": "tsc --noEmit",
+    "biome:fix": "biome check --apply ."
+  },
+  "files": ["dist"],
+  "keywords": ["bun"],
+  "license": "MIT",
+  "homepage": "https://github.com/ZTL-UwU/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZTL-UwU/pkg-name.git"
+  },
+  "bugs": "https://github.com/ZTL-UwU/pkg-name/issues",
+  "author": "Tony Zhang <zhangtianli2006@163.com>",
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@types/bun": "^1.0.0",
+    "bun-plugin-dts": "^0.2.1",
+    "typescript": "^5.2.2"
+  }
+}

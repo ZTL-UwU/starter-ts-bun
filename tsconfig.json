@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "module": "ESNext",
     "outDir": "dist",
     "moduleResolution": "Bundler",
@@ -14,6 +12,6 @@
     "noImplicitAny": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
+    "skipDefaultLibCheck": true
   }
 }

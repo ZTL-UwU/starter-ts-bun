@@ -1,12 +1,25 @@
 {
   "name": "pkg-name",
   "version": "0.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "description": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": ["./dist/*", "./dist/index.d.ts"]
+    }
+  },
   "scripts": {
-    "build": "bun run build.ts",
-    "prepublishOnly": "bun run build",
+    "build": "unbuild",
+    "prepublishOnly": "unbuild",
     "typecheck": "tsc --noEmit",
     "biome:fix": "biome check --apply ."
   },
@@ -23,7 +36,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.1",
     "@types/bun": "^1.0.0",
-    "bun-plugin-dts": "^0.2.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0"
   }
 }

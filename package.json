@@ -34,9 +34,9 @@
   "bugs": "https://github.com/ZTL-UwU/pkg-name/issues",
   "author": "Tony Zhang <zhangtianli2006@163.com>",
   "devDependencies": {
-    "@biomejs/biome": "1.7.1",
-    "@types/bun": "^1.0.0",
-    "typescript": "^5.2.2",
+    "@biomejs/biome": "^1.7.3",
+    "@types/bun": "^1.1.2",
+    "typescript": "^5.4.5",
     "unbuild": "^2.0.0"
   }
 }

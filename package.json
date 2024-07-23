@@ -21,7 +21,7 @@
     "build": "unbuild",
     "prepublishOnly": "unbuild",
     "typecheck": "tsc --noEmit",
-    "biome:fix": "biome check --apply ."
+    "biome:fix": "biome check --write ."
   },
   "files": ["dist"],
   "keywords": ["bun"],
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@types/bun": "^1.1.6",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.4",
     "unbuild": "^2.0.0"
   }
 }
